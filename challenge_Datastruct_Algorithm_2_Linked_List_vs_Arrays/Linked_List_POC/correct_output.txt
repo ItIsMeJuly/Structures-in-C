@@ -1,0 +1,35 @@
+At start of program, the list is:
+  <empty>
+
+After adding 3 elements:
+  0:  addr: 100  size:   5
+  1:  addr: 200  size:  10
+  2:  addr: 300  size:   8
+
+After adding 4th element just after the one on address 200:
+  0:  addr: 100  size:   5
+  1:  addr: 200  size:  10
+  2:  addr: 250  size:  50
+  3:  addr: 300  size:   8
+
+After adding 5th element before 100:
+  0:  addr:  99  size:   1
+  1:  addr: 100  size:   5
+  2:  addr: 200  size:  10
+  3:  addr: 250  size:  50
+  4:  addr: 300  size:   8
+
+After removing tail (address 300):
+  0:  addr:  99  size:   1
+  1:  addr: 100  size:   5
+  2:  addr: 200  size:  10
+  3:  addr: 250  size:  50
+
+After removing 2nd element (address 100):
+  0:  addr:  99  size:   1
+  1:  addr: 200  size:  10
+  2:  addr: 250  size:  50
+Temp is now: (nil). Temp should be NULL, printed as (nil)
+
+After removing all:
+  <empty>
